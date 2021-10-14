@@ -7,7 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="grad1">#019561</color>
-    <color name="grad2">#6AE6BB</color>
+    <color name="grad1">#3AEFCD</color>
+    <color name="grad2">#D2F1EB</color>
     <color name="color1">#2FEA92</color>
+    <color name="card1">#BBE1D8</color>
+    <color name="card2">#40F35C</color>
+    <color name="card3">#E3894F</color>
+    <color name="card4">#DF3750</color>
+
+    <color name="dashboard_background">#EAFFFB</color>
 </resources>

@@ -5,26 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp"
-    android:background="@color/white"
+    android:background="@drawable/background"
     android:orientation="vertical"
     android:padding="25dp">
 
 
 
     <ImageView
+        android:id="@+id/logo_img"
         android:layout_width="165dp"
         android:layout_height="108dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo2"
+        android:background="@drawable/background"
 
         android:transitionName="logo_img"
 
         />
 
     <TextView
-        android:id="@+id/hello_msg"
+        android:id="@+id/welcome_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amarante"
+        android:fontFamily="@font/amaranth"
         android:text="Welcome"
         android:transitionName="logo_text"
         android:textColor="@color/black"
@@ -32,6 +34,7 @@
         />
 
     <TextView
+        android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign up to explore the world"
@@ -49,6 +52,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/nameinput"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -68,6 +72,7 @@
         <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+            android:id="@+id/usernameinput"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -88,6 +93,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/emailinput"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -107,6 +113,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/phoneinput"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -126,6 +133,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:passwordToggleEnabled="true"
+            android:id="@+id/passwordinput"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -144,18 +152,21 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/signup_btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/inika"
         android:transitionName="signin_btn"
-        android:text="Signup" />
+        android:text="Signup"
+        android:onClick="registeruser"/>
 
     <Button
+        android:id="@+id/signin_btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#00000000"
-        android:fontFamily="@font/inika"
+        android:fontFamily="@font/amaranth"
         android:text="Already have an account? log in"
         android:transitionName="signup_btn"
         android:textColor="@color/black" />

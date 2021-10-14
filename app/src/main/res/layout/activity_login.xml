@@ -7,20 +7,21 @@
     tools:context=".LoginActivity"
     android:padding="25dp"
     android:orientation="vertical"
-    android:background="@color/white">
+    android:background="@drawable/background">
 
     <ImageView
         android:id="@+id/logo_img"
         android:layout_width="165dp"
         android:layout_height="108dp"
         android:transitionName="logo_img"
-        android:src="@drawable/logo" />
+        android:background="@drawable/background"
+        android:src="@drawable/logo2" />
 
     <TextView
         android:id="@+id/hello_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/amarante"
+        android:fontFamily="@font/amaranth"
         android:text="Hello there,Welcome"
         android:transitionName="logo_text"
         android:textColor="@color/black"
@@ -55,7 +56,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inika"
+                android:fontFamily="@font/amaranth"
                 android:transitionName="username_tran"/>
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -72,7 +73,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:fontFamily="@font/inika"
+            android:fontFamily="@font/amaranth"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:transitionName="password_tran"
@@ -87,7 +88,7 @@
         android:background="#00000000"
         android:text="Forget Password"
         android:onClick="ForgetPassword"
-        android:fontFamily="@font/inika"
+        android:fontFamily="@font/amaranth"
         android:textColor="@color/black"
         android:gravity="right"
         android:layout_gravity="right"
@@ -100,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:backgroundTint="#000000"
+        android:backgroundTint="#000"
         android:text="Sign In"
         android:onClick="Dashboard"
         android:transitionName="signin_btn"
@@ -119,7 +120,7 @@
         android:text="NEW USER? SIGN UP"
         android:onClick="SignUp"
         android:textColor="@color/black"
-        android:fontFamily="@font/inika"
+        android:fontFamily="@font/amaranth"
         android:transitionName="signup_btn"/>
     </LinearLayout>
 
